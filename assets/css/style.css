@@ -1,0 +1,217 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* reset */
+
+/* root */
+:root {
+    --color1: #276ef1;
+    --color2: white;
+    --color3: rgba(0, 0, 0, 0.379);
+    --color4: rgba(112, 194, 194, 0.382);
+    --color-bgc-header: rgb(255, 255, 255);
+    --color5: rgba(0, 0, 0, 0.166);
+    --color6: black;
+}
+
+/* root */
+
+/* font face */
+@font-face {
+    font-family: vazir;
+    src: url(../font/Vazir.woff);
+}
+
+/* font face */
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* scrollbar */
+
+/* font family */
+body,
+input,
+button {
+    font-family: vazir;
+}
+
+/* font family */
+
+/* main */
+main {
+
+    /* header */
+    >header {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        position: fixed;
+        background-color: var(--color-bgc-header);
+        width: 100%;
+        height: 80px;
+        border-bottom: 1px solid var(--color5);
+
+        >a {
+            >img {
+                margin-right: 180px;
+            }
+        }
+    }
+
+    /* header */
+
+    /* login/section1 */
+    >.login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+
+        >div {
+            margin-top: 40px;
+            width: 75%;
+            height: 546px;
+            border-radius: 15px;
+            background-color: var(--color4);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            overflow: hidden;
+
+            >form {
+                margin-right: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 17px;
+
+                >h2 {
+                    font-size: 27px;
+                }
+
+                >input {
+
+                    &:nth-of-type(1),
+                    &:nth-of-type(2) {
+                        width: 480px;
+                        height: 48px;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        text-align: right;
+                        padding-right: 20px;
+                        outline: none;
+
+                        &::placeholder {
+                            color: var(--color3);
+                        }
+                    }
+                }
+
+                >div {
+                    &:first-of-type {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 10px;
+
+                        >input {
+                            cursor: pointer;
+                        }
+
+                        >label {
+                            cursor: pointer;
+                        }
+                    }
+
+                    &:last-of-type {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 20px;
+
+                        >button {
+                            width: 480px;
+                            height: 48px;
+                            border: none;
+                            border-radius: 30px;
+                            font-size: 17px;
+                            background-color: var(--color1);
+                            color: var(--color2);
+                            cursor: pointer;
+                        }
+
+                        >a {
+                            color: var(--color1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* login/section1 */
+
+    /* footer */
+    >footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
+        height: 0;
+        position: relative;
+        top: -90px;
+        left: 30px;
+
+        >p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            color: var(--color2);
+            font-size: 19px;
+
+            >a {
+                color: var(--color6);
+            }
+        }
+
+        >div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            gap: 20px;
+
+            >a {
+                font-size: 35px;
+                color: var(--color2);
+                transition: all 0.4s;
+
+                &:hover {
+                    color: var(--color6);
+                }
+            }
+        }
+    }
+
+    /* footer */
+
+}
+
+/* main */
